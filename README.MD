@@ -15,6 +15,8 @@ baixando um modelo de ia pelo open-webui
 
 ![alt text](<Captura de tela de 2024-04-22 18-26-20.png>)
 
+all models here :  https://github.com/ollama/ollama
+
 
  Instalação manual : 
 

@@ -1,4 +1,3 @@
-version: '3'
 services:
   ollama:
     image: ollama/ollama
@@ -20,4 +19,4 @@ services:
 
 volumes:
   ollama:
-  open-web-ui:
+  open-webui:

@@ -9,7 +9,10 @@ acessar:
 
 http://127.0.0.1:3000/auth/
 
-ou faça tudo manualmente : 
+http://localhost:3000  > not working 
+
+
+ Instalação manual : 
 
 docs:
 

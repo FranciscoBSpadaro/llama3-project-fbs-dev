@@ -1,9 +1,8 @@
-Docker compose para iniciar projetos com ollama  + open-webui
+### Instalação Rápida com docker compose 
 
-
-clonar esse repositorio e digitar no terminal : 
-
-docker-compose up -d
+- Tenha o Docker instalado para executar o arquivo docker-compose.yml para iniciar projetos com ollama  + open-webui
+- clonar esse repositorio e digitar no terminal : 
+  - docker-compose up -d
 
 acessar:
 

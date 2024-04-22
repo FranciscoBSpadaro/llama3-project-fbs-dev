@@ -1,4 +1,4 @@
-Docker compose para iniciar projetos com llam3 + open-web-ui
+Docker compose para iniciar projetos com ollama  + open-webui
 
 
 clonar esse repositorio e digitar no terminal : 

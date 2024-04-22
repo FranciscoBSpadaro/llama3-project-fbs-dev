@@ -1,0 +1,23 @@
+version: '3'
+services:
+  ollama:
+    image: ollama/ollama
+    volumes:
+      - ollama:/root/.ollama
+    ports:
+      - 11434:11434
+    restart: always
+
+  open-web-ui:
+    image: ghcr.io/ollama-webui/ollama-webui:main
+    volumes:
+      - open-webui:/app/backend/data
+    ports:
+      - 3000:8080
+    environment:
+      - OLLAMA_BASE_URL=http://127.0.0.1:11434
+    restart: always
+
+volumes:
+  ollama:
+  open-web-ui:

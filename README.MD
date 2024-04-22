@@ -44,15 +44,12 @@ ollama list
 remover algum modelo :
 exemplo : 
 ollama remove llama-2
--
 
 iniciar ou parar o ollama
 docker container stop ollama
 docker container start ollama
 
 
-
-
-usando open-web-ui com ollama no docker
+usando open-webui com ollama no docker
 
 docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/ollama-webui/ollama-webui:main

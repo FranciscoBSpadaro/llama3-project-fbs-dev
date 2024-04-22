@@ -11,6 +11,10 @@ http://127.0.0.1:3000/auth/
 
 http://localhost:3000  > not working 
 
+baixando um modelo de ia pelo open-webui
+
+
+
 
  Instalação manual : 
 

@@ -18,7 +18,7 @@ baixando um modelo de ia pelo open-webui
 all models here :  https://github.com/ollama/ollama
 
 
- Instalação manual : 
+ ### Instalação manual ollama : 
 
 docs:
 
@@ -26,36 +26,34 @@ https://hub.docker.com/r/ollama/ollama
 
 https://github.com/ollama/ollama?tab=readme-ov-file
 
--
-baixar ollama com docker :
-docker pull ollama/ollama
 
-executar ollama :
-docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama      < version cpu only
+- baixar ollama com docker :
+  - docker pull ollama/ollama
 
-listar containers:
-docker ps
+- executar ollama   version cpu only :
+  - docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 
-acessar container e executar comandos no terminal do container 
-exemplo : docker exec -it <mycontainer> bash
+- listar containers:
+  - docker ps
 
-docker exec -it acff4a1b5aa2 bash
+- acessar container e executar comandos no terminal do container :
+  - exemplo : docker exec -it <mycontainer> bash
+  - docker exec -it acff4a1b5aa2 bash
 
-executar modelo :
-ollama run llama3
+- executar modelo :
+  - ollama run llama3
 
-listar modelos :
-ollama list
+- listar modelos :
+  - ollama list
 
-remover algum modelo :
-exemplo : 
-ollama remove llama-2
+- remover  modelo :
+  - ollama remove llama3
 
-iniciar ou parar o ollama
-docker container stop ollama
-docker container start ollama
+- iniciar ou parar o ollama
+  - docker container stop ollama
+  - docker container start ollama
 
 
-usando open-webui com ollama no docker
+### Instalação manual Open-Webui com ollama no docker
 
 docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
